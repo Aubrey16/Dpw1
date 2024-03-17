@@ -1,0 +1,335 @@
+/* Unch Unch */
+/* Header Start*/
+.top-header{
+    background-color: #fdf4f7;
+    margin: 0;
+    padding: 0;
+}
+
+
+.headerForm {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Button Login */
+.TombolLogin{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media (max-width: 479px) { 
+    .TombolLogin{
+        width: 50px;
+        height: 25px;
+        padding: 2px;
+        margin-bottom: 5px;
+        
+    }
+}
+.Kata-KataH3{
+    font-size: 2vw;
+}
+
+.Kata-KataH1{
+    font-size: 3vw;
+}
+
+@media (max-width: 479px) { 
+.Kata-KataH3{
+    font-size: 4vw;
+}
+.Kata-KataH1{
+    font-size: 6vw;
+    margin-bottom: 0%;
+}
+}
+
+@media (max-width: 767px) { 
+    .Kata-KataH3{
+        font-size: 4vw;
+    }
+    .Kata-KataH1{
+        font-size: 6vw;
+        margin-bottom: 0%;
+    }
+    }
+
+@media (max-width: 479px) { 
+    .headerForm{
+        width: 100px;
+        height: 20px;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Header End */
+
+/* Background */
+.bg-pict{
+    margin: 0;
+    padding: 0;
+    background-image: url(Urara.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Container Start*/
+.form-container{
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.form-container label{
+    color: black;
+    font-family:  Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+
+
+.form-container input{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: calc(100% - 30px);
+}
+/* Container End */
+
+
+
+/* Footer */
+.footer {
+    position: fixed;
+    background-color: #e1afd1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* Footer di selain desktop */
+@media only screen and (max-width: 1024px){
+    .footer{
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 844px){
+    .footer{
+        position: fixed;
+    }
+}
+
+/* Row BUat ke kiri in */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Kolom buat nge kiri in */
+.column {
+float: left;
+width: 33.33%;
+
+}
+
+
+
+/* Button Submit */
+.TombolSubmit{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #e1afd1;
+    color: white;
+    border-color:#e1afd1 ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Kiri in Kolom */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Kiri */
+.left {
+    width: 50%;
+    margin-left: 25px;
+    }
+
+/* Kanan */
+.right{
+    width: 13%;
+    margin-top: 30px;
+    }
+
+/* Tengah */
+.middle {
+    width: 13%;
+    margin-top: 30px;
+    }
+
+/* Paling kanan */
+.rightOne{
+    width: 8%;
+    margin-top: 30px;
+
+}
+
+@media(max-width: 1280px){
+    .rightOne{
+        width: 10%;
+        margin-left: 5px;
+    }
+    .middle{
+        width: 10%;
+        margin-left: 5px;
+    }
+    .right{
+        width: 10%;
+        margin-left: 10px;
+    }
+    .left{
+        width: 25%;
+    }
+}
+
+@media(max-width: 479px){
+    .rightOne{
+        width: 40%;
+        height: 20%;
+        margin-left: 5px;
+    }
+    .middle{
+        width: 25%;
+        height: 20%;
+        margin-left: 5px;
+    }
+    .right{
+        width: 25%;
+        height: 20%;
+        margin-left: 10px;
+    }
+    .left{
+        width: 25%;
+    }
+}
+
+@media(max-width: 765px){
+    .NamaLogo{
+        font-size: 10px;
+        padding-left: 20px;
+    }
+}
+
+/* Div */
+div {
+overflow: auto;
+}
+/* Tengahin */
+.center {
+text-align: center;
+}
+
+
+
+
+
+/* Sign in box */
+.aside {
+    background-color: white;
+    padding: 15px 25px;
+    margin-top: 30px;
+    flex-direction: column;
+    color: #000000;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media(max-width: 479px){
+    .aside{
+        margin-top: 0%;
+    }
+}
+
+
+/* Android */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* Font */
+h1{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+h3{
+    font-family:  Arial, Helvetica, sans-serif;;
+}
