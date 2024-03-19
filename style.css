@@ -24,12 +24,27 @@
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
     border: 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.TombolLogin:hover{
+    background-color: #de7cbf;
+    color: white;
+}
+.button-container {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 479px) { 
@@ -38,6 +53,7 @@
         height: 25px;
         padding: 2px;
         margin-bottom: 5px;
+        cursor: pointer;
         
     }
 }
@@ -118,11 +134,39 @@
 }
 /* Container End */
 
+.register-cont{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+}
 
+
+
+.register-cont input[type="radio"] {
+    margin-right: 10px; 
+  }
+  
+
+  .register-cont label[for="hobi1"],
+  .register-cont label[for="hobi2"] {
+    margin-right: 20px; 
+  }
 
 /* Footer */
 .footer {
     position: fixed;
+    background-color: #e1afd1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.footer2 {
+    position: relative;
     background-color: #e1afd1;
     left: 0;
     bottom: 0;
@@ -146,12 +190,31 @@
     }
 }
 
+@media only screen and (max-width: 1024px){
+    .footer2{
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 844px){
+    .footer2{
+        position: fixed;
+    }
+}
 /* Row BUat ke kiri in */
 .row:after {
 content: "";
 display: table;
 clear: both;
 }
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcdfe9;
+    padding: 10px;
+  }
 
 /* Kolom buat nge kiri in */
 .column {
@@ -168,6 +231,8 @@ width: 33.33%;
     margin-bottom: 20px;
     margin-top: 10px;
     background-color: #e1afd1;
+    transition: background-color 0.3s;
+    cursor: pointer;
     color: white;
     border-color:#e1afd1 ;
     border-radius: 5px;
@@ -175,6 +240,16 @@ width: 33.33%;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.TombolSubmit:hover{
+    color: #000000;
+    background-color: #9c4a66;
+    border-color: #9c4a66;
 }
 
 /* Kiri in Kolom */
@@ -254,10 +329,7 @@ width: 33.33%;
     }
 }
 
-/* Div */
-div {
-overflow: auto;
-}
+
 /* Tengahin */
 .center {
 text-align: center;
@@ -272,6 +344,21 @@ text-align: center;
     background-color: white;
     padding: 15px 25px;
     margin-top: 30px;
+    flex-direction: column;
+    color: #000000;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.aside2 {
+    background-color: #fcdfe9;
+    padding: 15px 25px;
+    margin: 5%;
     flex-direction: column;
     color: #000000;
     font-size: 14px;
@@ -333,3 +420,111 @@ h1{
 h3{
     font-family:  Arial, Helvetica, sans-serif;;
 }
+
+.dropbtn {
+    background-color: #de7cbf;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcdfe9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #9c4a66;
+  }
+
+
+
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  .register-cont label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-15 {
+    float: left;
+    width: 5%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .col-70 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
