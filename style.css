@@ -6,6 +6,18 @@
     padding: 0;
 }
 
+.top-header3{
+    background-color: #dfe4ea;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header2{
+    background-color: #0652dc;
+    margin: 0;
+    padding: 0;
+}
+
 
 .headerForm {
     padding: 10px;
@@ -165,6 +177,18 @@
     padding: 15px;
 }
 
+.footer3 {
+    position: fixed;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #24869e;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
 .footer2 {
     position: relative;
     background-color: #e1afd1;
@@ -198,6 +222,18 @@
 
 @media only screen and (min-height: 844px){
     .footer2{
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .footer3{
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 844px){
+    .footer3{
         position: fixed;
     }
 }
@@ -252,6 +288,32 @@ width: 33.33%;
     border-color: #9c4a66;
 }
 
+.TombolSubmit2{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #347ab7;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: white;
+    border-color:#347ab7 ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.TombolSubmit2:hover{
+    color: #000000;
+    background-color: #164f81;
+    border-color: #164f81;
+}
+
 /* Kiri in Kolom */
 [class*="col-"] {
     float: left;
@@ -282,6 +344,7 @@ width: 33.33%;
     margin-top: 30px;
 
 }
+
 
 @media(max-width: 1280px){
     .rightOne{
@@ -460,14 +523,7 @@ h3{
   .dropdown:hover .dropbtn {
     background-color: #9c4a66;
   }
-
-
-
-
-
-
-
-
+  
   * {
     box-sizing: border-box;
   }
